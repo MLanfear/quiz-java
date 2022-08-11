@@ -37,7 +37,7 @@ p {
 }
 
 #questionTitle {
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -60,9 +60,6 @@ p {
     text-size-adjust: 45px;
 }
 
-section {
-    align-items: center;
-}
 
 .row {
     font-family: Arial;
@@ -71,14 +68,25 @@ section {
     width: 350px;
     height: 500px;
     outline: dashed 1px black;
+    float:right;
 }
 
 .btn {
-    font-size: 20px bold;
     background-color: yellow;
     border: 10px black;
     border-style: round;
-    color:black bold 35px;
     outline: magenta 3px dashed;
     
+}
+
+section {
+    background: black;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
 }
