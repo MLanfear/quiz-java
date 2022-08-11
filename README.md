@@ -1,3 +1,5 @@
 # quiz-java
 
-Basic Javasript and css/html. 
+Basic Javasript Quiz.
+Multiple choice Javascript questions with a final score provided at the end.
+
