@@ -1,5 +1,5 @@
 body {
-    background-color: #f2f2f2; 
+    background-color: tan; 
 }
 
 h1, h2 {
@@ -73,3 +73,7 @@ section {
     outline: dashed 1px black;
 }
 
+.btn btn-dark {
+    background-color: teal;
+    border: 10px black
+}
