@@ -2,8 +2,7 @@ body {
     background-color: #f2f2f2; 
 }
 
-h1, 
-h2 {
+h1, h2 {
     color: #313740;
     font-family: 'Montserrat', sans-serif;
 }
@@ -49,17 +48,28 @@ p {
 
 #everything {
     background: teal;
-    padding: 20px;
-    border: 50px black, bold;
+    padding: 25px;
+    border: 25px black, bold;
+    align-content: center;
 
 }
 
 .row {
-    background: magenta
-    center;
+    background: magenta;
+    padding: 25px;
     text-size-adjust: 45px;
 }
 
 section {
     align-items: center;
 }
+
+.row {
+    font-family: Arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 350px;
+    height: 500px;
+    outline: dashed 1px black;
+}
+
