@@ -131,7 +131,7 @@ function newQuiz() {
 
     startDiv.style.display = "none";
     questionDiv.style.display = "block";
-    timer.style.display = "block";
+    timer.style.display = "";
     timesUp.style.display = "none";
 
     var startTimer = setInterval(function() {
