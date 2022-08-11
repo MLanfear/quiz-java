@@ -46,3 +46,20 @@ p {
     font-style: italic;
     color: #4D5159;
 }
+
+#everything {
+    background: teal;
+    padding: 20px;
+    border: 50px black, bold;
+
+}
+
+.row {
+    background: magenta
+    center;
+    text-size-adjust: 45px;
+}
+
+section {
+    align-items: center;
+}
