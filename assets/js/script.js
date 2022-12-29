@@ -1,22 +1,3 @@
-/** 
- * Criteria 
- */
-
-// GIVEN I am taking a code quiz
-// WHEN I click the start button
-// THEN a timer starts and I am presented with a question
-// WHEN I answer a question
-// THEN I am presented with another question
-// WHEN I answer a question incorrectly
-// THEN time is subtracted from the clock
-// WHEN all questions are answered or the timer reaches 0
-// THEN the game is over
-// WHEN the game is over
-// THEN I can save my initials and score
-
-/** 
- * DEFINE VARIABLES 
- */
 
  // Define a set of questions
  const questions = [
@@ -175,12 +156,12 @@ function checkAnswer(answer) {
         // correct answer, add 1 score to final score
         correctAns++;
         // console.log(correctAns);
-        answerCheck.textContent = "Correct!";
+        answerCheck.textContent = "Bravo!";
     } else {
         // wrong answer, deduct 10 second from timer
         totalTime -= 10;
         timeLeft.textContent = totalTime;
-        answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
+        answerCheck.textContent = "Womp womp! The correct answer is: " + questions[questionIndex].answer;
     }
 
     questionIndex++;
@@ -217,7 +198,7 @@ function gameOver() {
 function storeHighScores(event) {
     event.preventDefault();
 
-    // stop function is initial is blank
+    // stop function if initial is blank
     if (initialInput.value === "") {
         alert("Please enter your initials!");
         return;
@@ -282,10 +263,6 @@ function showHighScores() {
         listOfHighScores.appendChild(eachNewHighScore);
     }
 }
-
-/**
- * ADD EVENT LISTENERS
- */
 
 startQuizBtn.addEventListener("click", newQuiz);
 choiceA.addEventListener("click", chooseA);
